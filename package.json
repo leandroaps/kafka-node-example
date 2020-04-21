@@ -1,0 +1,20 @@
+{
+  "name": "kafka-node-example",
+  "version": "1.0.0",
+  "description": "Example of using Node + Kafka",
+  "main": "index.js",
+  "scripts": {
+    "kafka:install": "brew install kafka",
+    "kafka:start": "brew services start zookeeper && brew services start kafka",
+    "kafka:stop": "brew services stop zookeeper && brew services stop kafka",
+    "kafka:topis": "/usr/local/Cellar/kafka/2.0.0",
+    "start:producer": "node index_producer.js",
+    "start:consumer": "node index_consumer.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "kafka-node": "^5.0.0",
+    "uuid": "^7.0.3"
+  }
+}
